@@ -76,7 +76,16 @@ body{
     flex-direction: column;
     margin: 0;
     align-items: center;
+    background-image: url("./empty-blackboard.jpg");
+    background-size: cover;
+    z-index: -1;
     
+}
+#footer{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #red{
