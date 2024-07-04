@@ -60,7 +60,7 @@ colorContainer.addEventListener("click", (e)=>{
             color = "royalblue";
             break;
         case "green":
-            color = "lightgreen";
+            color = "mediumspringgreen";
             break;
         case "delete":
             color = "rgba(121, 103, 103, 0.26)"
@@ -74,7 +74,7 @@ optionsDiv.addEventListener("click", (e)=>{
     let target = e.target;
     if(target.id === "changeSize"){
         let size = Math.floor(prompt("Inserisci la dimensione della griglia (limite max: 100x100): "));
-        if(size < 0 || size > 100|| isNaN(size)){
+        if(size < 0 || size > 100|| isNaN(size)|| size === 0){
             alert("Input non valido!");
         }else{
         while(gridDiv.hasChildNodes()){

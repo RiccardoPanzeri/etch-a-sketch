@@ -1,8 +1,8 @@
 #gridContainer{
     display:flex;
     flex-wrap:wrap;
-    width: 600px;
-    height: 600px;
+    width: 550px;
+    height: 550px;
     border: solid black 2px;
     box-sizing: border-box;
     
@@ -43,8 +43,15 @@
 }
 
 .button{
-    width: 60px;
-    height: 40px;
+    min-width: 100px;
+    border: solid  silver 2px;
+    border-radius: 45% ;
+    background-color: black;
+    font-size: 24px;
+    font-family: cursive, 'Times New Roman', Times, serif;
+    color:antiquewhite;
+    text-align: center;
+    flex: 1 0 auto;
 }
 
 .interface{
@@ -88,6 +95,34 @@ body{
     align-items: center;
 }
 
+h1{
+    font-size: 40px;
+}
+
+h1, p {
+    font-family:cursive, 'Times New Roman', Times, serif;
+    color:antiquewhite;
+    text-shadow: gray ;
+}
+
+
 #red{
 
+    border-color: rgb(141, 5, 5);
+
+}
+
+#blue{
+    border-color: royalblue;
+}
+
+#green{
+    border-color: mediumspringgreen;
+}
+#black{
+    border-color: gray;
+}
+
+#white{
+    border-color: antiquewhite;
 }
