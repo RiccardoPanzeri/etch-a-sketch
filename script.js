@@ -74,14 +74,15 @@ optionsDiv.addEventListener("click", (e)=>{
     let target = e.target;
     if(target.id === "changeSize"){
         let size = Math.floor(prompt("Inserisci la dimensione della griglia (limite max: 100x100): "));
-        if(size < 0 || size > 100){
+        if(size < 0 || size > 100|| isNaN(size)){
             alert("Input non valido!");
         }else{
         while(gridDiv.hasChildNodes()){
             gridDiv.removeChild(gridDiv.firstChild);
            }
-        }
+        
         createGrid(size);
+        }
     }else if(target.id === "clear"){
         const childList = document.querySelectorAll(".grid");
             childList.forEach(element => {

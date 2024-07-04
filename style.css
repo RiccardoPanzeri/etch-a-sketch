@@ -1,8 +1,8 @@
 #gridContainer{
     display:flex;
     flex-wrap:wrap;
-    width: 500px;
-    height: 500px;
+    width: 600px;
+    height: 600px;
     border: solid black 2px;
     box-sizing: border-box;
     
